@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Football App!</h1>
+
+        <section id="quote-section">
+            <h2>Daily Motivational Quote</h2>
+            <div id="quote-display">"Believe in yourself!"</div>
+            <button onclick="generateQuote()">Get New Quote</button>
+        </section>
+
+        <section id="media-upload">
+            <h2>Upload Photos and Videos</h2>
+            <input type="file" id="media-input" accept="image/*,video/*">
+            <button onclick="uploadMedia()">Upload</button>
+            <div id="media-display"></div>
+        </section>
+
+        <section id="highlights-section">
+            <h2>Create Highlight Reel</h2>
+            <button onclick="createHighlightReel()">Create Highlight Reel</button>
+            <div id="highlights-display"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
